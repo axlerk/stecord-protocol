@@ -1,0 +1,748 @@
+{
+ "constants": {
+  "HEADER_ENTRIES": 6375,
+  "HEADER_K": 8,
+  "HEADER_LEN": 25,
+  "KMAX": 16,
+  "MAX_MESSAGE": 4096,
+  "PBKDF2_ITERATIONS": 600000,
+  "TAG_LEN": 16
+ },
+ "covers": [
+  {
+   "bytes": 111817,
+   "file": "covers/cover-baseline-192x336.mov",
+   "levels": [
+    {
+     "level": 1,
+     "rows_sha256": "38de2d12c604c3551580cad15d4b1fc07b902f5101ade3df740000fa49ca110c",
+     "size": 3474
+    },
+    {
+     "level": 2,
+     "rows_sha256": "5a731cde5f703c8afa097c16b5ccfd77463c0cccbd4ba63b097eeb1e1c1a2b6b",
+     "size": 11270
+    },
+    {
+     "level": 3,
+     "rows_sha256": "70e494e1f37a855826210d94e8fbc670cb8f500d0a559f3eb81f807a951d44a2",
+     "size": 36576
+    },
+    {
+     "level": 4,
+     "rows_sha256": "f9b4831dab7cd226cca9fa883bb085720f8d10d069ae2800be9d381c59c82b33",
+     "size": 38978
+    }
+   ],
+   "name": "cover-baseline-192x336",
+   "nonce": "80663a3526ef64705535c2eab280550ae790f2921b7b7244207db36168140a87",
+   "parsed": true,
+   "pictures": 30,
+   "rows": 97386,
+   "sha256": "ca78fbe0e28845090265554b992c3b03141e159a231d01bbc45ba74c503d81de",
+   "slices": 30,
+   "usable": 91441
+  },
+  {
+   "bytes": 143460,
+   "file": "covers/cover-high-256x448.mov",
+   "levels": [
+    {
+     "level": 0,
+     "rows_sha256": "afd442c34f8fdecf447e2c828d70c8cf11d6714b20e11d9d2dddc8213f76e5ca",
+     "size": 16662
+    },
+    {
+     "level": 1,
+     "rows_sha256": "37f0b43f01e765e4e331801505df1fa7701d89a77cc5689a777b45ab66816bae",
+     "size": 19573
+    },
+    {
+     "level": 2,
+     "rows_sha256": "a04eddf2471d4a3f3a687503cbb2615308ad8d312fdc2fc706d3185155d5d722",
+     "size": 27856
+    },
+    {
+     "level": 3,
+     "rows_sha256": "2b78b78e4ab60cfdbfb200d56da5ee6b229d7fd8e362f8d358055fe62e78be78",
+     "size": 50454
+    },
+    {
+     "level": 4,
+     "rows_sha256": "135042ab80453a15f7c661acc66ab29645f329a0ae7aff202c3e787a2cf2285e",
+     "size": 54887
+    }
+   ],
+   "name": "cover-high-256x448",
+   "nonce": "daa89e9024975ea604c9feaa75e219926132466fdb479d08abb6e7d022609600",
+   "parsed": true,
+   "pictures": 30,
+   "rows": 117054,
+   "sha256": "e036afc11879c28a0a997c67d769ff5cba30443b0bfd5d0a4a0d53bfb2342fa2",
+   "slices": 30,
+   "usable": 109904
+  },
+  {
+   "bytes": 147051,
+   "file": "covers/cover-high-2slices-256x448.mov",
+   "levels": [
+    {
+     "level": 0,
+     "rows_sha256": "a090ca2dea11b6153c86c5740dd5d891e92b8f27c71b15010ef39f1c64fae504",
+     "size": 17325
+    },
+    {
+     "level": 1,
+     "rows_sha256": "da1794f6ec8fde3f791594a23e775d53fcae6f360db7bc993841afe142944801",
+     "size": 20308
+    },
+    {
+     "level": 2,
+     "rows_sha256": "95be7b970264b6f00d6fad7158d00517e768aa31f8c03b55cfe01df3b8961ed4",
+     "size": 28822
+    },
+    {
+     "level": 3,
+     "rows_sha256": "95421bf8729330359091779b4072e33a0c63f1c0f22c16171c7037d3dddda62c",
+     "size": 51192
+    },
+    {
+     "level": 4,
+     "rows_sha256": "c9a70ce08133039a1d87dce7d15d49a78b746635f09862209ba80561a6d4a8a4",
+     "size": 55654
+    }
+   ],
+   "name": "cover-high-2slices-256x448",
+   "nonce": "adcf5d4b3af1ca178fe7e12cc166e28d3426a585b466eb33ffe98f57323c064c",
+   "parsed": true,
+   "pictures": 30,
+   "rows": 119299,
+   "sha256": "cb169c14d062ec786eb3b67a5429e30b7965b589887ce8ed530a422bee27caf1",
+   "slices": 60,
+   "usable": 111899
+  },
+  {
+   "bytes": 93020,
+   "file": "covers/unsupported-cabac-192x336.mov",
+   "name": "unsupported-cabac-192x336",
+   "parse_error": "CABAC stream (entropy_coding_mode_flag=1), not CAVLC",
+   "parsed": false,
+   "sha256": "1f0808ef0e5cdd61027966c22aa68dc14e291a90c56bad3a41b7d7d24c3302d4"
+  }
+ ],
+ "format": 1,
+ "generator": "spec/reference/python/make_vectors.py",
+ "passwords": {
+  "main": "correct horse battery staple",
+  "open": "OPEN_PASSWORD, ASCII 'stecord-open-v1' (public)",
+  "other": "Tr0ub4dor&3"
+ },
+ "spec": "stealth-v1 / open-v1 / embedding-layer / carrier-layer (draft)",
+ "tools": {
+  "ffmpeg": "8.1.1 (Homebrew), libx264 core 165 r3222 b35605a"
+ },
+ "vectors": [
+  {
+   "bytes": 111817,
+   "cover": "cover-baseline-192x336",
+   "encode": {
+    "entries_used": 9423,
+    "flips": 49,
+    "k": 7,
+    "level": 2,
+    "message_hex": "68656c6c6f",
+    "message_utf8": "hello",
+    "password": "main",
+    "salt": "59fa6c5f18eb71bdd574c6c990a30117"
+   },
+   "file": "stego/stealth-hello-baseline.mov",
+   "kind": "stealth",
+   "name": "stealth-hello-baseline",
+   "notes": "Smallest everyday case on a Baseline (I/P only) cover; the cheapest level that holds the header is 2 (levels 0 and 1 are absent or too small for the 6375-entry header).",
+   "reads": [
+    {
+     "expect": "ok",
+     "message_hex": "68656c6c6f",
+     "password": "main"
+    },
+    {
+     "expect": "no-payload",
+     "password": "other"
+    },
+    {
+     "expect": "no-payload",
+     "password": "open"
+    }
+   ],
+   "sha256": "25dc3784a9294083e62dd59591f28c0b59ae743e27f9cb5a26898b76b79a70d5"
+  },
+  {
+   "bytes": 143460,
+   "cover": "cover-high-256x448",
+   "encode": {
+    "entries_used": 16084,
+    "flips": 44,
+    "k": 9,
+    "level": 0,
+    "message_hex": "68656c6c6f",
+    "message_utf8": "hello",
+    "password": "main",
+    "salt": "c95a6f9d07dcb085144a594f11a64b1c"
+   },
+   "file": "stego/stealth-hello-high.mov",
+   "kind": "stealth",
+   "name": "stealth-hello-high",
+   "notes": "High profile with B frames and the 8x8 transform; chosen level and k by the informative chooser.",
+   "reads": [
+    {
+     "expect": "ok",
+     "message_hex": "68656c6c6f",
+     "password": "main"
+    },
+    {
+     "expect": "no-payload",
+     "password": "other"
+    },
+    {
+     "expect": "no-payload",
+     "password": "open"
+    }
+   ],
+   "sha256": "878f6d0958effc3db97e9f10f5e2a62fdfe43b12e5b5804d85510aec63064779"
+  },
+  {
+   "bytes": 147051,
+   "cover": "cover-high-2slices-256x448",
+   "encode": {
+    "entries_used": 15265,
+    "flips": 94,
+    "k": 7,
+    "level": 0,
+    "message_hex": "d09fd180d0b8d0b2d0b5d1822c20d18dd182d0be20d182d0b5d181d18220537465636f72642e20e4bda0e5a5bd",
+    "message_utf8": "Привет, это тест Stecord. 你好",
+    "password": "main",
+    "salt": "df33b322f741e652964cf56348a67867"
+   },
+   "file": "stego/stealth-cyrillic-2slices.mov",
+   "kind": "stealth",
+   "name": "stealth-cyrillic-2slices",
+   "notes": "Two slices per picture (first_mb_in_slice 0 and the second half), UTF-8 outside ASCII.",
+   "reads": [
+    {
+     "expect": "ok",
+     "message_hex": "d09fd180d0b8d0b2d0b5d1822c20d18dd182d0be20d182d0b5d181d18220537465636f72642e20e4bda0e5a5bd",
+     "password": "main"
+    },
+    {
+     "expect": "no-payload",
+     "password": "other"
+    },
+    {
+     "expect": "no-payload",
+     "password": "open"
+    }
+   ],
+   "sha256": "4814c9908d19c90241f92cca1df3c050a74d8add61045a6fd6d060308a9e5d95"
+  },
+  {
+   "bytes": 143460,
+   "cover": "cover-high-256x448",
+   "encode": {
+    "entries_used": 14551,
+    "flips": 41,
+    "k": 9,
+    "level": 0,
+    "message_hex": "78",
+    "message_utf8": "x",
+    "password": "main",
+    "salt": "f2f72e65abbff75d9e9a7ca98935026c"
+   },
+   "file": "stego/stealth-one-byte.mov",
+   "kind": "stealth",
+   "name": "stealth-one-byte",
+   "notes": "Shortest message: length 1.",
+   "reads": [
+    {
+     "expect": "ok",
+     "message_hex": "78",
+     "password": "main"
+    },
+    {
+     "expect": "no-payload",
+     "password": "other"
+    },
+    {
+     "expect": "no-payload",
+     "password": "open"
+    }
+   ],
+   "sha256": "d67c28017b7c4ea333c10169e3e75ff987e9d59f84a1f20ac7c55a834b16f6b5"
+  },
+  {
+   "bytes": 143460,
+   "cover": "cover-high-256x448",
+   "encode": {
+    "entries_used": 6527,
+    "flips": 103,
+    "k": 1,
+    "level": 0,
+    "message_hex": "616263",
+    "message_utf8": "abc",
+    "password": "main",
+    "salt": "148e596000e368e70266c3c76c3ad39f"
+   },
+   "file": "stego/stealth-forced-level0-k1.mov",
+   "kind": "stealth",
+   "name": "stealth-forced-level0-k1",
+   "notes": "Forced level 0 (non-reference slices) and k = 1 (one message bit per row).",
+   "reads": [
+    {
+     "expect": "ok",
+     "message_hex": "616263",
+     "password": "main"
+    },
+    {
+     "expect": "no-payload",
+     "password": "other"
+    },
+    {
+     "expect": "no-payload",
+     "password": "open"
+    }
+   ],
+   "sha256": "81824ffb66e991c51766e099e3369b5c33e16995eb3e6b961f0e3d6fb2afa952"
+  },
+  {
+   "bytes": 143460,
+   "cover": "cover-high-256x448",
+   "encode": {
+    "entries_used": 39127,
+    "flips": 41,
+    "k": 11,
+    "level": 4,
+    "message_hex": "666976657a",
+    "message_utf8": "fivez",
+    "password": "main",
+    "salt": "bc3b8a8b907394bf4f49296239f97c87"
+   },
+   "file": "stego/stealth-forced-level4-k11.mov",
+   "kind": "stealth",
+   "name": "stealth-forced-level4-k11",
+   "notes": "Forced level 4 (I slices included) and k = 11 (groups of 2047 rows).",
+   "reads": [
+    {
+     "expect": "ok",
+     "message_hex": "666976657a",
+     "password": "main"
+    },
+    {
+     "expect": "no-payload",
+     "password": "other"
+    },
+    {
+     "expect": "no-payload",
+     "password": "open"
+    }
+   ],
+   "sha256": "5a4ff6e7757c076f492022da33545d625a42eb2e9eb540429ea1472fed7368e6"
+  },
+  {
+   "bytes": 143460,
+   "cover": "cover-high-256x448",
+   "encode": {
+    "entries_used": 18567,
+    "flips": 3101,
+    "k": 2,
+    "level": 1,
+    "message_hex": "54686520717569636b2062726f776e20666f78206a756d7073206f76657220746865206c617a7920646f672e2054686520717569636b2062726f776e20666f78206a756d7073206f76657220746865206c617a7920646f672e2054686520717569636b2062726f776e20666f78206a756d7073206f76657220746865206c617a7920646f672e2054686520717569636b2062726f776e20666f78206a756d7073206f76657220746865206c617a7920646f672e2054686520717569636b2062726f776e20666f78206a756d7073206f76657220746865206c617a7920646f672e2054686520717569636b2062726f776e20666f78206a756d7073206f76657220746865206c617a7920646f672e2054686520717569636b2062726f776e20666f78206a756d7073206f76657220746865206c617a7920646f672e2054686520717569636b2062726f776e20666f78206a756d7073206f76657220746865206c617a7920646f672e2054686520717569636b2062726f776e20666f78206a756d7073206f76657220746865206c617a7920646f672e2054686520717569636b2062726f776e20666f78206a756d7073206f76657220746865206c617a7920646f672e2054686520717569636b2062726f776e20666f78206a756d7073206f76657220746865206c617a7920646f672e2054686520717569636b2062726f776e20666f78206a756d7073206f76657220746865206c617a7920646f672e2054686520717569636b2062726f776e20666f78206a756d7073206f76657220746865206c617a7920646f672e2054686520717569636b2062726f776e20666f78206a756d7073206f76657220746865206c617a7920646f672e2054686520717569636b2062726f776e20666f78206a756d7073206f76657220746865206c617a7920646f672e2054686520717569636b2062726f776e20666f78206a756d7073206f76657220746865206c617a7920646f672e2054686520717569636b2062726f776e20666f78206a756d7073206f76657220746865206c617a7920646f672e2054686520717569636b2062726f776e20666f78206a756d7073206f76657220746865206c617a7920646f672e2054686520717569636b2062726f776e20666f78206a756d7073206f76657220746865206c617a7920646f672e2054686520717569636b2062726f776e20666f78206a756d7073206f76657220746865206c617a7920646f672e2054686520717569636b2062726f776e20666f78206a756d7073206f76657220746865206c617a7920646f672e2054686520717569636b2062726f776e20666f78206a756d7073206f76657220746865206c617a7920646f672e2054686520717569636b20",
+    "message_utf8": "The quick brown fox jumps over the lazy dog. The quick brown fox jumps over the lazy dog. The quick brown fox jumps over the lazy dog. The quick brown fox jumps over the lazy dog. The quick brown fox jumps over the lazy dog. The quick brown fox jumps over the lazy dog. The quick brown fox jumps over the lazy dog. The quick brown fox jumps over the lazy dog. The quick brown fox jumps over the lazy dog. The quick brown fox jumps over the lazy dog. The quick brown fox jumps over the lazy dog. The quick brown fox jumps over the lazy dog. The quick brown fox jumps over the lazy dog. The quick brown fox jumps over the lazy dog. The quick brown fox jumps over the lazy dog. The quick brown fox jumps over the lazy dog. The quick brown fox jumps over the lazy dog. The quick brown fox jumps over the lazy dog. The quick brown fox jumps over the lazy dog. The quick brown fox jumps over the lazy dog. The quick brown fox jumps over the lazy dog. The quick brown fox jumps over the lazy dog. The quick ",
+    "password": "main",
+    "salt": "b0dea5a393013f6efc19469ad4a69794"
+   },
+   "file": "stego/stealth-long-1000.mov",
+   "kind": "stealth",
+   "name": "stealth-long-1000",
+   "notes": "1000-byte message.",
+   "reads": [
+    {
+     "expect": "ok",
+     "message_hex": "54686520717569636b2062726f776e20666f78206a756d7073206f76657220746865206c617a7920646f672e2054686520717569636b2062726f776e20666f78206a756d7073206f76657220746865206c617a7920646f672e2054686520717569636b2062726f776e20666f78206a756d7073206f76657220746865206c617a7920646f672e2054686520717569636b2062726f776e20666f78206a756d7073206f76657220746865206c617a7920646f672e2054686520717569636b2062726f776e20666f78206a756d7073206f76657220746865206c617a7920646f672e2054686520717569636b2062726f776e20666f78206a756d7073206f76657220746865206c617a7920646f672e2054686520717569636b2062726f776e20666f78206a756d7073206f76657220746865206c617a7920646f672e2054686520717569636b2062726f776e20666f78206a756d7073206f76657220746865206c617a7920646f672e2054686520717569636b2062726f776e20666f78206a756d7073206f76657220746865206c617a7920646f672e2054686520717569636b2062726f776e20666f78206a756d7073206f76657220746865206c617a7920646f672e2054686520717569636b2062726f776e20666f78206a756d7073206f76657220746865206c617a7920646f672e2054686520717569636b2062726f776e20666f78206a756d7073206f76657220746865206c617a7920646f672e2054686520717569636b2062726f776e20666f78206a756d7073206f76657220746865206c617a7920646f672e2054686520717569636b2062726f776e20666f78206a756d7073206f76657220746865206c617a7920646f672e2054686520717569636b2062726f776e20666f78206a756d7073206f76657220746865206c617a7920646f672e2054686520717569636b2062726f776e20666f78206a756d7073206f76657220746865206c617a7920646f672e2054686520717569636b2062726f776e20666f78206a756d7073206f76657220746865206c617a7920646f672e2054686520717569636b2062726f776e20666f78206a756d7073206f76657220746865206c617a7920646f672e2054686520717569636b2062726f776e20666f78206a756d7073206f76657220746865206c617a7920646f672e2054686520717569636b2062726f776e20666f78206a756d7073206f76657220746865206c617a7920646f672e2054686520717569636b2062726f776e20666f78206a756d7073206f76657220746865206c617a7920646f672e2054686520717569636b2062726f776e20666f78206a756d7073206f76657220746865206c617a7920646f672e2054686520717569636b20",
+     "password": "main"
+    },
+    {
+     "expect": "no-payload",
+     "password": "other"
+    },
+    {
+     "expect": "no-payload",
+     "password": "open"
+    }
+   ],
+   "sha256": "000da0b192714cad7e7d8c90dfbafac017043252a2cee5cc26b056c873e65658"
+  },
+  {
+   "bytes": 143460,
+   "cover": "cover-high-256x448",
+   "encode": {
+    "entries_used": 16084,
+    "flips": 44,
+    "k": 9,
+    "level": 0,
+    "message_hex": "68656c6c6f",
+    "message_utf8": "hello",
+    "password": "open",
+    "salt": "b3468c2cfa9d7524a1f36baed4bf509d"
+   },
+   "file": "stego/open-hello.mov",
+   "kind": "open",
+   "name": "open-hello",
+   "notes": "Open mode: the frame of stealth-v1 under the public password (open-v1.md).",
+   "reads": [
+    {
+     "expect": "ok",
+     "message_hex": "68656c6c6f",
+     "password": "open"
+    },
+    {
+     "expect": "no-payload",
+     "password": "main"
+    }
+   ],
+   "sha256": "74ad53774b52f209063df5b74697d3e118f667a1fe2c89aac23bc033e5df73a9"
+  },
+  {
+   "bytes": 111817,
+   "cover": "cover-baseline-192x336",
+   "encode": {
+    "entries_used": 9258,
+    "flips": 114,
+    "k": 5,
+    "level": 2,
+    "message_hex": "d09fd180d0b8d0b2d0b5d1822c20d0bed182d0bad180d18bd182d18bd0b920d180d0b5d0b6d0b8d0bc2e",
+    "message_utf8": "Привет, открытый режим.",
+    "password": "open",
+    "salt": "0e5d24d4e9421290cb6a0b05d76c5345"
+   },
+   "file": "stego/open-cyrillic.mov",
+   "kind": "open",
+   "name": "open-cyrillic",
+   "notes": "",
+   "reads": [
+    {
+     "expect": "ok",
+     "message_hex": "d09fd180d0b8d0b2d0b5d1822c20d0bed182d0bad180d18bd182d18bd0b920d180d0b5d0b6d0b8d0bc2e",
+     "password": "open"
+    },
+    {
+     "expect": "no-payload",
+     "password": "main"
+    }
+   ],
+   "sha256": "786b1898d48664436dd0ff0ec8ff399c47e76673d01ab09651fabb26ea642e55"
+  },
+  {
+   "bytes": 143460,
+   "cover": "cover-high-256x448",
+   "encode": {
+    "derived_from": "stealth-hello-high",
+    "message_hex": "68656c6c6f",
+    "password": "main",
+    "recipe": "ffmpeg -i stealth-hello-high.mov -c copy -movflags +faststart"
+   },
+   "file": "stego/stealth-hello-high-faststart.mov",
+   "kind": "stealth",
+   "name": "stealth-hello-high-faststart",
+   "notes": "A lossless re-mux (container rewritten, every sample byte unchanged) still decodes: the clip nonce covers the video samples, not the whole file.",
+   "reads": [
+    {
+     "expect": "ok",
+     "message_hex": "68656c6c6f",
+     "password": "main"
+    },
+    {
+     "expect": "no-payload",
+     "password": "other"
+    }
+   ],
+   "sha256": "b0f2f7284e9a9111fc88f6009da9cb02736c7c4dcd0bcb13c92a5c6fa1602e9a"
+  },
+  {
+   "bytes": 143460,
+   "cover": "cover-high-256x448",
+   "encode": null,
+   "file": "covers/cover-high-256x448.mov",
+   "kind": "negative",
+   "name": "cover-high-no-message",
+   "notes": "A clip with no message under any password: no-payload, the same answer as a wrong password.",
+   "reads": [
+    {
+     "expect": "no-payload",
+     "password": "main"
+    },
+    {
+     "expect": "no-payload",
+     "password": "open"
+    }
+   ],
+   "sha256": "e036afc11879c28a0a997c67d769ff5cba30443b0bfd5d0a4a0d53bfb2342fa2"
+  },
+  {
+   "bytes": 143460,
+   "cover": "cover-high-256x448",
+   "encode": {
+    "derived_from": "stealth-hello-high",
+    "flip": "row 97182 (first row of header group 0)"
+   },
+   "file": "negative/negative-header-bit-flipped.mov",
+   "kind": "negative",
+   "name": "negative-header-bit-flipped",
+   "notes": "One sign bit of the header flipped: the marker no longer matches, so no-payload (the same answer as a wrong password).",
+   "reads": [
+    {
+     "expect": "no-payload",
+     "password": "main"
+    }
+   ],
+   "sha256": "232344ffedf9f8f72cc8d14041b6eb6ec70b40c6264e00ab607b18a1e81d51f3"
+  },
+  {
+   "bytes": 143460,
+   "cover": "cover-high-256x448",
+   "encode": {
+    "derived_from": "stealth-hello-high",
+    "flip": "row 36156 (first row of body group 0)"
+   },
+   "file": "negative/negative-body-bit-flipped.mov",
+   "kind": "negative",
+   "name": "negative-body-bit-flipped",
+   "notes": "One sign bit of the body flipped: the header still authenticates, the GCM tag does not: invalid.",
+   "reads": [
+    {
+     "expect": "invalid",
+     "password": "main"
+    }
+   ],
+   "sha256": "3e6cac7486da3364a1c144541deff00ab225c83f815e9c46f178f75f7131a616"
+  },
+  {
+   "bytes": 143460,
+   "cover": "cover-high-256x448",
+   "encode": {
+    "header_plain_hex": "0200050007",
+    "level": 4,
+    "password": "main",
+    "salt": "8737660c4d222e9a383cce33dffa04d9"
+   },
+   "file": "negative/negative-version-2.mov",
+   "kind": "negative",
+   "name": "negative-version-2",
+   "notes": "Version 2: unsupported.",
+   "reads": [
+    {
+     "expect": "unsupported",
+     "password": "main"
+    }
+   ],
+   "sha256": "7e8643798539a1097c3db51cb372743a39d1773e607c4938d4c31b3b16d997ea"
+  },
+  {
+   "bytes": 143460,
+   "cover": "cover-high-256x448",
+   "encode": {
+    "header_plain_hex": "0101050007",
+    "level": 4,
+    "password": "main",
+    "salt": "86543cb70e880d5b1f1e5287ab7ade88"
+   },
+   "file": "negative/negative-flags-nonzero.mov",
+   "kind": "negative",
+   "name": "negative-flags-nonzero",
+   "notes": "Reserved flags nonzero: unsupported.",
+   "reads": [
+    {
+     "expect": "unsupported",
+     "password": "main"
+    }
+   ],
+   "sha256": "2ab79a4b0f15b56e3a534e8da55e1c3d6fb700261a968fd58efe1a7b9996ab87"
+  },
+  {
+   "bytes": 143460,
+   "cover": "cover-high-256x448",
+   "encode": {
+    "header_plain_hex": "0100000007",
+    "level": 4,
+    "password": "main",
+    "salt": "3c99b65a6f9f5856f2cc7f3f75122bf0"
+   },
+   "file": "negative/negative-k-zero.mov",
+   "kind": "negative",
+   "name": "negative-k-zero",
+   "notes": "k = 0: invalid.",
+   "reads": [
+    {
+     "expect": "invalid",
+     "password": "main"
+    }
+   ],
+   "sha256": "f323574f0cfe65a49773bfe48ed9284e67eb6424aaa57c75a1205ab0bdefe403"
+  },
+  {
+   "bytes": 143460,
+   "cover": "cover-high-256x448",
+   "encode": {
+    "header_plain_hex": "0100110007",
+    "level": 4,
+    "password": "main",
+    "salt": "e79a79de465c9a9c11c381f19e2c4d1c"
+   },
+   "file": "negative/negative-k-17.mov",
+   "kind": "negative",
+   "name": "negative-k-17",
+   "notes": "k = 17 (above 16): invalid.",
+   "reads": [
+    {
+     "expect": "invalid",
+     "password": "main"
+    }
+   ],
+   "sha256": "477b87d0f6c135fb4a13b854f0ac1e0152430bc74771e9175705293b46da5a56"
+  },
+  {
+   "bytes": 143460,
+   "cover": "cover-high-256x448",
+   "encode": {
+    "header_plain_hex": "0100050000",
+    "level": 4,
+    "password": "main",
+    "salt": "942129584538dd5a4bae8679cf805ad9"
+   },
+   "file": "negative/negative-length-zero.mov",
+   "kind": "negative",
+   "name": "negative-length-zero",
+   "notes": "Length 0: invalid.",
+   "reads": [
+    {
+     "expect": "invalid",
+     "password": "main"
+    }
+   ],
+   "sha256": "712ee04b779a6d43385c078395263f90bd52679beb4446a3f681ec752ed4830d"
+  },
+  {
+   "bytes": 143460,
+   "cover": "cover-high-256x448",
+   "encode": {
+    "header_plain_hex": "0100051001",
+    "level": 4,
+    "password": "main",
+    "salt": "f7e9140f988a7153107ccc49ce7d6b69"
+   },
+   "file": "negative/negative-length-4097.mov",
+   "kind": "negative",
+   "name": "negative-length-4097",
+   "notes": "Length 4097 (above the limit of 4096): invalid.",
+   "reads": [
+    {
+     "expect": "invalid",
+     "password": "main"
+    }
+   ],
+   "sha256": "3947e3be4135c6d4b0ff6a01c16986c2eff33a235679b229dd827539d61ff210"
+  },
+  {
+   "bytes": 143460,
+   "cover": "cover-high-256x448",
+   "encode": {
+    "header_plain_hex": "0100020fa0",
+    "level": 4,
+    "password": "main",
+    "salt": "0602bfb524a0512c216715b2e01b3c64"
+   },
+   "file": "negative/negative-body-does-not-fit.mov",
+   "kind": "negative",
+   "name": "negative-body-does-not-fit",
+   "notes": "Length 4000 at k = 2 needs more rows than the level set holds: invalid.",
+   "reads": [
+    {
+     "expect": "invalid",
+     "password": "main"
+    }
+   ],
+   "sha256": "2930913ae8a45e11fca5f13099930cff92e767a5ca9cbc90fc69cea0bc73e7e6"
+  },
+  {
+   "bytes": 71730,
+   "cover": "cover-high-256x448",
+   "encode": {
+    "cut_at": 71730,
+    "derived_from": "stealth-hello-high"
+   },
+   "file": "negative/negative-truncated-half.mov",
+   "kind": "negative",
+   "name": "negative-truncated-half",
+   "notes": "Cut at half: no moov box, unsupported-carrier.",
+   "reads": [
+    {
+     "expect": "unsupported-carrier",
+     "password": "main"
+    }
+   ],
+   "sha256": "334ff25227cd744c6bb825fb3a3ad5603f281384745751831344d561d0b4ae63"
+  },
+  {
+   "bytes": 143360,
+   "cover": "cover-high-256x448",
+   "encode": {
+    "cut_at": 143360,
+    "derived_from": "stealth-hello-high"
+   },
+   "file": "negative/negative-truncated-in-moov.mov",
+   "kind": "negative",
+   "name": "negative-truncated-in-moov",
+   "notes": "Cut 100 bytes before the end, inside moov: unsupported-carrier.",
+   "reads": [
+    {
+     "expect": "unsupported-carrier",
+     "password": "main"
+    }
+   ],
+   "sha256": "23cad74ea20ee21bb7760dcca5884c6a922358987f9e00ad5bda89bc37233bc4"
+  },
+  {
+   "bytes": 93020,
+   "cover": null,
+   "encode": null,
+   "file": "covers/unsupported-cabac-192x336.mov",
+   "kind": "negative",
+   "name": "negative-cabac",
+   "notes": "CABAC stream (entropy_coding_mode_flag 1): unsupported-carrier.",
+   "reads": [
+    {
+     "expect": "unsupported-carrier",
+     "password": "main"
+    }
+   ],
+   "sha256": "1f0808ef0e5cdd61027966c22aa68dc14e291a90c56bad3a41b7d7d24c3302d4"
+  },
+  {
+   "bytes": 124784,
+   "cover": "cover-high-256x448",
+   "encode": {
+    "derived_from": "stealth-hello-high",
+    "recipe": "ffmpeg -i stealth-hello-high.mov -c:v libx264 -preset veryfast -profile:v high -coder 0 -crf 28 -pix_fmt yuv420p -an"
+   },
+   "file": "negative/negative-reencoded.mov",
+   "kind": "negative",
+   "name": "negative-reencoded",
+   "notes": "The stego clip decoded and encoded again (same encoder settings): the candidate sets and the nonce are other ones, so no-payload. A re-encode destroys the message.",
+   "reads": [
+    {
+     "expect": "no-payload",
+     "password": "main"
+    }
+   ],
+   "sha256": "5658394bdd9b5102131bc52edf8ad7a126367d29429eb9e025a66d2ff4e3ce01"
+  }
+ ]
+}
