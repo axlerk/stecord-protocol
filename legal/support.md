@@ -1,6 +1,6 @@
 # Stecord — Support
 
-_Last updated: 16 November 2026. Stecord is not released yet; this page describes the app as it is built today._
+_Last updated: 20 November 2026. Stecord is not released yet; this page describes the app as it is built today._
 
 ## What is Stecord?
 
@@ -44,11 +44,13 @@ project's protocol repository.
 **Why only Messages?**
 Messages delivered Stecord's videos byte for byte unchanged between
 two iPhones in our tests. Any edit, trim or re-encode erases the
-hidden text, and other messengers, MMS and email re-encode videos.
+hidden text. We have not tested other messengers, MMS or email; if one
+re-encodes the video, the text is gone.
 
 **My recipient is on Android. Does it work?**
-No. If Messages falls back to MMS or SMS, the video is re-encoded and
-the hidden text is gone.
+No. Reading the hidden text needs Stecord, which runs only on iPhone.
+We have also not tested whether a video sent outside iMessage (RCS,
+MMS) arrives unchanged.
 
 **I lost my password.**
 We cannot recover it. The password never leaves your device, and

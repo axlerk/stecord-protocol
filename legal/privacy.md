@@ -1,6 +1,6 @@
 # Stecord — Privacy Policy
 
-_Last updated: 16 November 2026. Stecord is not released yet; this policy describes the app as it is built today and may change before release._
+_Last updated: 20 November 2026. Stecord is not released yet; this policy describes the app as it is built today and may change before release._
 
 Stecord is an iOS app and iMessage extension that records short square
 video notes and can hide a short text inside a video, on the device,
@@ -30,7 +30,11 @@ or to any third party.
 | A video you copy with "Copy instead of send" on | The system clipboard, on this device only; it expires after two minutes | No |
 
 Stecord does not keep a library of your videos and cannot read your
-Photos library. Removing the app removes everything in the table above.
+Photos library. Removing the app removes its settings and temporary
+files. iOS may keep Keychain items after an app is deleted; Stecord
+erases its saved passwords the next time it is installed on this
+device. Until then they may stay in this device's Keychain, where no
+other app can read them.
 
 ## Outbound network requests
 
@@ -41,8 +45,10 @@ Stecord's control.
 ## Camera and microphone
 
 The iMessage extension asks for the camera and the microphone only when
-you start recording a video, never when it opens. The video is written
-on the device. The container app uses the camera only to scan a
+you tap **Turn on camera**, never when it opens. The video is written
+on the device. After your first recording, the camera starts when you open
+Stecord in a conversation, and stops after 30 seconds without a touch,
+when you leave, or in Low Power Mode. The container app uses the camera only to scan a
 partner's QR code in Pair in Person.
 
 ## Face ID / Touch ID
