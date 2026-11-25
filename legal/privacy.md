@@ -1,6 +1,6 @@
 # Stecord — Privacy Policy
 
-_Last updated: 20 November 2026. Stecord is not released yet; this policy describes the app as it is built today and may change before release._
+_Last updated: 24 November 2026. Stecord is not released yet; this policy describes the app as it is built today and may change before release._
 
 Stecord is an iOS app and iMessage extension that records short square
 video notes and can hide a short text inside a video, on the device,
@@ -13,7 +13,8 @@ Stecord does and does not collect.
   **no advertising**, **no third-party tracking SDKs**.
 - Everything you create (videos, hidden texts, passwords) stays on
   your device until you send it through Messages.
-- Stecord makes **no outbound network requests** of its own.
+- Apart from App Store purchases, Stecord makes **no network requests**,
+  with one exception: maps, and only after you tap (see below).
 
 ## Data we collect
 
@@ -38,9 +39,37 @@ other app can read them.
 
 ## Outbound network requests
 
-**None initiated by Stecord.** A video you send leaves the device only
-through Apple's Messages, which is operated by Apple and outside
-Stecord's control.
+A video you send leaves the device only through Apple's Messages, which
+is operated by Apple and outside Stecord's control.
+
+Apart from purchases (see Purchases), Stecord reaches the network only
+for maps, and only after you tap:
+
+- **Pick on Map**, when you add a place: Apple loads the map for the area
+  you are looking at, and a search sends what you type to Apple.
+- **Show map**, when you read a place: Apple receives the area around the
+  place, from your IP address. Stecord asks each time; "Always show maps",
+  or the switch in Settings → Maps, turns the question off.
+- A tap on a map that is shown opens it in a browser sheet: Apple Maps'
+  website for a place added in Stecord, or the sender's own map link
+  (Google Maps, for example) if the message carried one. That site then
+  receives the request, from your IP address.
+- **A place in a hidden message**, when you tap it: coordinates written
+  in a hidden message are a link, and a tap opens Apple Maps' website in a
+  browser sheet, without the "Show map" question. Apple then receives the
+  request, from your IP address.
+
+Stecord never sends the rest of the hidden text to Apple or to anyone
+else.
+
+## Location
+
+Stecord asks for your location only when you tap **Current Location**
+while writing a hidden message, or the location button on the **Pick on
+Map** screen. Current Location reads your position once, rounds it to
+about a metre and adds the coordinates to the hidden text; they leave the
+device only inside the video you send. Choosing a place on the map by
+hand needs no location permission. If you decline, everything else works.
 
 ## Camera and microphone
 
@@ -61,8 +90,9 @@ Stecord never sees your biometric data.
 ## Purchases
 
 In-app purchases (Stecord Pro monthly, yearly, lifetime, and Tip Jar)
-are processed by Apple through StoreKit. Stecord sees only whether you
-have an active entitlement. We do not receive your name, email, payment
+are processed by Apple through StoreKit. The app asks the App Store for
+current prices when it opens. Stecord sees only whether you have an
+active entitlement. We do not receive your name, email, payment
 details or Apple Account.
 
 ## What Stecord cannot protect against

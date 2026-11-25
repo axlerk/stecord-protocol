@@ -304,9 +304,37 @@ next and nothing sent before.
 
 Stecord has no server and no accounts, and its code calls no analytics or
 tracking service: it imports Apple's frameworks, nothing else (read
-2026-11-20). Purchases go through Apple's App Store. The app makes no
-network request of its own, and a link in a revealed text is plain text and
-opens nothing.
+2026-11-20). Purchases go through Apple's App Store. A link in a revealed
+text is plain text and opens nothing; the exceptions are a place, which opens
+when its shown map is tapped, and a `geo:` place written in the text, which is
+also a tappable link (below).
+
+**A map reaches Apple Maps only when you ask.** Apart from Apple's App Store
+for prices and purchases, the app reaches the network only for maps, and
+only after a tap: its own requests go to Apple's map servers, through
+MapKit, and a tap on a shown map opens a web page in the system's browser
+sheet. When a revealed text holds a place (`geo:lat,lon`, or a map link with
+coordinates in it), the reading screen shows the coordinates and a "Show
+map" button; nothing is requested before that tap, and the tap asks first.
+After "Show map" Apple's map servers receive the area around the place (a
+0.01° view), from the reader's IP, at that moment; the message itself is not
+sent. "Always show maps" on that question, or the switch in Settings, draws
+the map as soon as the message is read. A tap on a shown map opens it in a
+browser sheet: maps.apple.com for a place added in Stecord, or the sender's
+own map link (Google Maps, for example) when the message carried one, and
+that site then sees the reader's request. The `geo:` text of a place is
+itself a link: a tap on it opens maps.apple.com for that place in the same
+sheet, without the "Show map" question (owner, 2026-11-24: a tap on a link is
+the person asking for the map; port from Stiger c26e914). On the sending side, "Pick on Map"
+loads map tiles for the area shown, and its search sends what is typed to
+Apple; "Current Location", and the location button on the Pick on Map
+screen, ask for the location permission on first use. Current Location reads
+one position, rounded to five decimals (about 1 m), which goes only into the
+hidden text. Stecord sends the coordinates nowhere itself. For a message
+that *is* a place, the area Apple sees is most of what it says; to keep a
+place away from Apple, do not tap "Show map" or the `geo:` link, or send it as plain text. (The
+code paths are those of Stiger and Stecho, map on tap, 2026-11-21; what
+MapKit sends was checked in Stecho that day, not measured for Stecord.)
 
 ## 4. At a glance
 
