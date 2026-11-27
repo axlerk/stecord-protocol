@@ -51,7 +51,7 @@ one.
 
 **May change before 1.0:** the header and the framing (25 bytes, `k = 8`,
 the masked fields, header bytes as associated data, no padding), the limit
-of 4 096 bytes (the app accepts 1 024), the domain strings `stecord-v1-*`,
+of 4 096 bytes (the app accepts at most 1 024, and fewer in a short clip), the domain strings `stecord-v1-*`,
 the open password `stecord-open-v1`, the nonce over the video samples only,
 the position policy and its constants. The cryptographic primitives and
 their parameters are not expected to change.

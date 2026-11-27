@@ -125,7 +125,8 @@ put a 512-bit message into I slices and cost 42.8 dB against about 59 dB typical
 
 **Measured in the research format** (not this one; the body there was the message plus 6 bytes, no header, no tag), phone-written clips, 28
 clips: an 8-byte payload flips 7 to 11 signs and a 64-byte payload 44 to 70 (median 51), at median PSNR 96 and 87 dB
-(2026-11-08). The app caps the message at 1 024 bytes because the flips grow with the message and the
+(2026-11-08). The app caps the message at 1 024 bytes, and since 2026-11-26 at the length whose expected flips are 0.5 % of the
+clip's level-1 set when that is smaller, because the flips grow with the message and the
 detectors' AUC grows with the flips' share of the set ([`THREAT_MODEL.md`](THREAT_MODEL.md), section 3).
 
 ## 6. No side channel

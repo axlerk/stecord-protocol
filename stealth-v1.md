@@ -25,7 +25,7 @@ This document defines the wire format above the embedding layer. It follows Stig
 | `HEADER_LEN` / `HEADER_K` / `HEADER_ENTRIES` | 25 bytes / 8 / 6 375 (embedding layer, section 4) |
 | `KMAX` | 16 |
 | `TAG_LEN` | 16 |
-| `MAX_MESSAGE` | 4 096 bytes (a decoder rejects more; an app may allow fewer: Stecord accepts 1 024) |
+| `MAX_MESSAGE` | 4 096 bytes (a decoder rejects more; an app may allow fewer: Stecord accepts at most 1 024, and fewer in a short clip) |
 | PBKDF2 | HMAC-SHA256, 600 000 iterations, 32 output bytes |
 
 ## 2. What is written

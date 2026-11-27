@@ -65,8 +65,8 @@ checked ourselves; §5 lists it all.
 
 ## 1. What Stecord does
 
-Stecord hides a short text (up to 1 024 bytes in the app; the format allows
-4 096) in a video clip and sends the clip through iMessage as an ordinary
+Stecord hides a short text (in the app about 30 bytes for each second of
+video and never more than 1 024; the format allows 4 096) in a video clip and sends the clip through iMessage as an ordinary
 attachment. The recipient drags the clip into Stecord, or copies and pastes
 it there, and reads the text.
 
@@ -166,7 +166,11 @@ is a coin flip, 1.0 is caught every time.
 
 For scale: the app accepts 1 KB at most, which in a 30-second clip flips
 about 0.027 % of the usable signs (2026-11-13/14,
-`experiment-long-clips.md`).
+`experiment-long-clips.md`). Since 2026-11-26 the app also limits a message by
+its clip: the expected flips stay within 0.5 % of the clip's level-1 rows, the
+two quietest cost classes (`docs/experiment-message-volume.md`). That is a
+dose chosen from these tables, not a claim that a smaller message cannot be
+found.
 
 - **This is not a claim that a clip is undetectable.** A handful of indoor
   scenes held by hand, two phones, small detectors; the brackets are 95 %
