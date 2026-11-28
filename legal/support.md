@@ -13,7 +13,7 @@ password, if you used one) they can read the text.
 
 1. Install Stecord (when it is released) and open it once.
 2. In Messages, open a conversation, tap + and choose Stecord.
-3. Hold the camera square to record (up to 30 seconds), then let go.
+3. Hold the camera square to record (up to 60 seconds), then let go.
 4. Tap **Send**, or tap **Add a hidden message** first and type.
 5. To read a hidden message, touch and hold the received video, drag it
    into the Stecord panel. (With Settings > "Paste instead of drag" on,

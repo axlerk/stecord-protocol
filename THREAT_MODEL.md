@@ -71,9 +71,12 @@ attachment. The recipient drags the clip into Stecord, or copies and pastes
 it there, and reads the text.
 
 The app records the clip itself: a 720 × 720 square at 30 frames a second,
-at most 30 seconds, H.264 with CAVLC entropy coding and AAC sound, written
-as a `.mov`. Recording stops early if the file would pass 11 MB, and the app
-does not open a received video over 12 MB or 32 s. The message goes into the
+at most 60 seconds, H.264 with CAVLC entropy coding and AAC sound, written
+as a `.mov`. Recording stops early if the file would pass 21 MB, and the app
+does not open a received video over 22 MB or 62 s. (60 s since 2026-11-27,
+measured on both phones first: `docs/experiment-message-volume.md`, phase 2:
+memory peak at most 111 MB with 670-770 MB free, 4 of 4 sends byte-identical
+and read. Until then 30 s, 11 MB, and 12 MB or 32 s.) The message goes into the
 sign bits of some of the clip's residual coefficients (`carrier-layer.md`,
 `embedding-layer.md`); the file keeps its exact length.
 

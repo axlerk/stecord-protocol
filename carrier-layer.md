@@ -56,16 +56,16 @@ others, as long as it accepts every clip the limits below accept.
 | Decoder limit | Value | Reason |
 |---|---|---|
 | file size | under 2^29 bytes | a row is a file bit position in 32 bits (section 4) |
-| samples in the video track | at most 16 384 | 900 in a 30 s clip at 30 fps |
+| samples in the video track | at most 16 384 | 1 800 in a 60 s clip at 30 fps |
 | sample placement | every sample lies inside the file and starts at or after the end of the sample before it in the table (increasing, non-overlapping) | bounds the bytes parsed by the file size; without it many table entries can name one slice |
 | `stsc` | `first_chunk` strictly increasing (ISO/IEC 14496-12, 8.7.4) | one pass over the table |
 | table counts, `avcC` fields | inside their own box; an SPS or PPS of `avcC` is at least 2 bytes | no read outside the box |
 | 64-bit box size, `co64` offset | inside the file | |
 | `log2_max_frame_num`, `log2_max_pic_order_cnt_lsb` | at most 16 (H.264 7.4.2.1.1) | they are bit widths in every slice header |
 | picture size | at most 1 024 macroblocks per side and 8 192 per picture | 720x720 is 2 025, 1080x1920 is 8 160; the tables are sized by it |
-| macroblocks over all pictures | at most 2^24 | 1.8 million in 30 s of 720x720 at 30 fps |
-| rows (section 4) | at most 12 330 000 | the largest file the app opens (12 MB, below) at the densest clip measured (0.822 rows per byte, a synthetic noise clip), times 1.25; the largest 30 s phone clip (8.16 MB) had 4.93 million |
-| file size and duration, checked by the app before any parse | at most 12 000 000 bytes and 32 s | the app's own recording stops at 30 s and at a projected size of 11 MB; anything larger is not one of its clips |
+| macroblocks over all pictures | at most 2^24 | 3.6 million in 60 s of 720x720 at 30 fps |
+| rows (section 4) | at most 22 605 000 | the largest file the app opens (22 MB, below) at the densest clip measured (0.822 rows per byte, a synthetic noise clip), times 1.25; the largest 30 s phone clip (8.16 MB) had 4.93 million (12 330 000 with the 30 s set, until 2026-11-27) |
+| file size and duration, checked by the app before any parse | at most 22 000 000 bytes and 62 s | the app's own recording stops at 60 s and at a projected size of 21 MB (since 2026-11-27, `docs/experiment-message-volume.md`; 12 000 000 bytes and 32 s before); anything larger is not one of its clips |
 
 **Verified** (2026-11-12): the three parsed covers and every vector of `test-vectors/` are inside these limits (the
 engine's vector tests pass with them); every limit but the 2^29 file size has a test with a file that is refused
